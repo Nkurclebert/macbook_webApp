@@ -7,7 +7,7 @@ const Showcase = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
 
     useGSAP(() => {
-        if(isTablet) {
+        if(!isTablet) {
             const timeline = gsap.timeline({
                 scrollTrigger: {
                     trigger: '#showcase',
