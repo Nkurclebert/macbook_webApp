@@ -24,10 +24,10 @@ const ProductViewer = () => {
                 <div className='color-control'>
                     <div 
                     onClick={() => setColor('#adb5bd')} 
-                    className={clsx('bg-neutral-300', color === '#adb5bd' && 'active')}></div>
+                    className={clsx('bg-neutral-300', color === '#adb5bd' && 'active')} />
                     <div 
                     onClick={() => setColor('#2e2c2e')} 
-                    className={clsx('bg-neutral-900', color === '#2e2c2e' && 'active')}></div>
+                    className={clsx('bg-neutral-900', color === '#2e2c2e' && 'active')} />
                 </div>
 
                 <div className='size-control'>
@@ -45,7 +45,7 @@ const ProductViewer = () => {
             </div>
         </div>
 
-        <Canvas id='cancas' camera={{position: [0, 2, 5], fov: 50, near: 0.1, far: 100}}>
+        <Canvas id='cancas' camera={{position: [0, 2, 5], fov:50, near: 0.1, far: 100}}>
             <StudioLights />
             
 
